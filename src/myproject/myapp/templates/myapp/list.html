@@ -1,34 +1,749 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Sharing your best value documents</title>	
-	</head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//ES" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<script type="text/javascript">(function() { var a=window,b="jstiming",d="tick";var e=function(c){this.t={};this.tick=function(c,o,h){h=void 0!=h?h:(new Date).getTime();this.t[c]=[h,o]};this[d]("start",null,c)},f=new e;a.jstiming={Timer:e,load:f};if(a.performance&&a.performance.timing){var g=a.performance.timing,j=a[b].load,k=g.navigationStart,l=g.responseStart;0<k&&l>=k&&(j[d]("_wtsrt",void 0,k),j[d]("wtsrt_","_wtsrt",l),j[d]("tbsd_","wtsrt_"))}
+try{var m=null;a.chrome&&a.chrome.csi&&(m=Math.floor(a.chrome.csi().pageT),j&&0<k&&(j[d]("_tbnd",void 0,a.chrome.csi().startE),j[d]("tbnd_","_tbnd",k)));null==m&&a.gtbExternal&&(m=a.gtbExternal.pageT());null==m&&a.external&&(m=a.external.pageT,j&&0<k&&(j[d]("_tbnd",void 0,a.external.startE),j[d]("tbnd_","_tbnd",k)));m&&(a[b].pt=m)}catch(n){};a.tickAboveFold=function(c){var i=0;if(c.offsetParent){do i+=c.offsetTop;while(c=c.offsetParent)}c=i;750>=c&&a[b].load[d]("aft")};var p=!1;function q(){p||(p=!0,a[b].load[d]("firstScrollTime"))}a.addEventListener?a.addEventListener("scroll",q,!1):a.attachEvent("onscroll",q);
+ })();</script>
+<meta content='true' name='MSSmartTagsPreventParsing'/>
+<meta content='blogger' name='generator'/>
+<link href='http://66465464.blogspot.it/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='http://66465464.blogspot.com/' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Sharing Documents - Atom" href="http://66465464.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Sharing Documents - RSS" href="http://66465464.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Sharing Documents - Atom" href="http://www.blogger.com/feeds/3245624960293152754/posts/default" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.blogger.com/rsd.g?blogID=3245624960293152754" />
+<link rel="me" href="http://www.blogger.com/profile/12939674721039430976" />
+<link rel="openid.server" href="http://www.blogger.com/openid-server.g" />
+<link rel="openid.delegate" href="http://66465464.blogspot.com/" />
 
-	<body>
-		<!-- List of uploaded documents -->
-		{% if documents %}
-			<ul>
-			{% for document in documents %}
-				<li><a href="{{ document.docfile.url }}">{{ document.docfile.name }}</a></li>
-			{% endfor %}
-			</ul>
-		{% else %}
-			<p>No documents.</p>
-		{% endif %}
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>
+Sharing Documents
+</title>
+<link type='text/css' rel='stylesheet' href='//www.blogger.com/static/v1/widgets/1937454905-widget_css_bundle.css' />
+<link type="text/css" rel="stylesheet" href="//www.blogger.com/dyn-css/authorization.css?targetBlogID=3245624960293152754&zx=6f500a48-eec5-4078-9c00-a3037db4c7e2"/>
+<style id='page-skin-1' type='text/css'><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Crystal Blue
+ThemeUrl  http://www.raycreationsindia.com/free-blogspot-templates.aspx
+Company:  Ray Creations
+Designer: Aparna Pramanik
+URL:      http://www.raycreationsindia.com/
+Date:     30 April 2009
+License:  This free BlogSpot theme is licensed under the Creative Commons Attribution 3.0 License,
+which permits both personal and commercial use.
+However, to satisfy the 'attribution' clause of the license, you are required to keep the
+footer links intact which provides due credit to its authors. For more specific details about
+the license, you may visit the URL below:
+http://creativecommons.org/licenses/by/3.0/
+----------------------------------------------- */
+/*-- (Hiding the navbar) --*/
+#navbar-iframe {
+height:0px;
+visibility:show;
+display:none
+}
+body {
+margin:0;
+padding-top:0px;
+background:#f2f2f2;
+font-family:"Trebuchet MS",Tahoma,sans-serif;
+color:#1ED0F0;
+font-size:12px;
+}
+img {
+border:0;
+}
+a {
+color:#0291d0;
+text-decoration:none
+}
+a:hover {
+color:#0172a4;
+text-decoration:underline;
+}
+h1, h2, h3, h4, h5, h6 {
+margin: 10px 0 10px 0;
+}
+blockquote {
+padding:20px 10px 20px 10px;
+color:#666666;
+font-style: normal;
+background-color: #f2f2f2;
+border: 1px solid #cccccc;
+}
+.clear {
+clear:both;
+}
+.alignleft {
+float:left;
+padding:0px 0 0 5px;
+margin-top:0px;
+}
+.alignright {
+float:right;
+padding:0px 0 0 5px;
+}
+/* The Wrapper */
+#wrapper {
+width:100%;
+margin:0 auto;
+background: url(http://4.bp.blogspot.com/_hcF8ssiWKd4/ShZIBMf7CwI/AAAAAAAAA7w/myJqRclnGoc/s1600/toplayout-repeat.jpg) top left repeat-x;
+}
+.main-repeat{
+width: 980px;
+background: url(http://3.bp.blogspot.com/_hcF8ssiWKd4/ShZIAFlm27I/AAAAAAAAA6w/Uu3Yt4Sz13Q/s1600/layout-repeat.jpg);
+}
+.main-body
+{
+width: 980px;
+}
+/* The Top */
+#top {
+float:none;
+margin-top:0px;
+background-repeat: no-repeat;
+}
+.blogname {
+float:none;
+width:980px;
+height: 145px;
+padding: 10px 0 0 0;
+background: url(http://2.bp.blogspot.com/_hcF8ssiWKd4/ShZH_mF7gFI/AAAAAAAAA6g/kDJNI5ZMkdU/s1600/headerbar.jpg) center no-repeat;
+font-family:"Trebuchet MS",Verdana,Tahoma,sans-serif;
+margin:0px 0 0 0;
+}
+.blogname h1  {
+font-size:36px;
+font-weight:normal;
+margin:0px 0px 0 40px;
+color:#ffffff;
+text-decoration: none;
+text-align:left;
+}
+.blogname h1  a:link, .blogname h1  a:visited{
+color: #ffffff;
+text-decoration: none;
+background-color:transparent;
+}
+.blogname h1  a:hover {
+color: #17eff9;
+text-decoration: underline;
+background-color:transparent;
+}
+.blogname h2 {
+margin:0px 40px 0 40px;
+font-size:14px;
+font-weight:normal;
+color:#ffffff;
+text-align:left;
+}
+.searchbar{
+width: 950px;
+height:40px;
+padding: 0px 30px 0 0;
+background: url(http://3.bp.blogspot.com/_hcF8ssiWKd4/ShZIA50ruXI/AAAAAAAAA7Y/dtPUqeExiWw/s1600/searchbar.jpg) no-repeat;
+}
+.content {
+padding:0px 0px 0px 10px;
+background: transparent;
+background-repeat:no-repeat;
+}
+/* Menu */
+#foxmenucontainer{
+height:38px;
+display:block;
+padding:0px 0 0px 0px;
+}
+#foxmenu{
+position:relative;
+display:block;
+width: 950px;
+height:38px;
+padding-right: 0px;
+font-size:12px;
+font-family:Trebuchet MS, Arial,Verdana;
+}
+#foxmenu ul{
+margin:0px;
+padding:5px 20px 0 0;
+list-style-type:none;
+float:right;
+}
+#foxmenu ul li{
+margin:0 1px 0 0;
+padding: 2px 10px 2px 5px;
+float:left;
+width: 100px;
+background: url(http://2.bp.blogspot.com/_hcF8ssiWKd4/ShZIAgIDUGI/AAAAAAAAA7Q/TGTGzZlbfXA/s1600/rss.jpg) left bottom no-repeat;
+}
+#foxmenu ul li a{
+display:block;
+color:#cccccc;
+text-align: center;
+text-decoration:none;
+padding:2px 0px 0 0;
+float:right;
+height: 15px;
+}
+#foxmenu ul li a:hover{
+color:#cccccc;
+text-decoration:underline;
+height: 15px;
+text-align: center;
+}
+#foxmenu ul li a.current,#foxmenu ul li a.current:hover{
+color:#ff9600;
+height: 15px;
+}
+#content {
+float: left;
+width: 650px;
+height:  100%;
+margin: 0px 10px 0px 0;
+padding: 0 0 30px 12px;
+}
+.title{
+margin: 0 0;
+padding: 0px 0px 0px 0;
+color: #02a4eb;
+background:transparent;
+}
+.author {
+width:184px;
+height:24px;
+float: left;
+padding: 10px 5px 5px 50px;
+background: url(http://4.bp.blogspot.com/_hcF8ssiWKd4/ShZIADrPk9I/AAAAAAAAA64/rijCb83UNx0/s1600/post-author.jpg) #ffffff no-repeat;
+}
+.time-comment {
+width: 405px;
+float: right;
+}
+.post-info{
+width: 100%;
+height: 39px;
+padding: 0px 0 0 0px;
+margin: 10px 0 0 0px;
+text-align: left;
+}
+.post {
+margin: 0px 0px 0 5px;
+padding:0px 0px 0px 0px;
+height: 100%;
+text-align:left;
+color:#666666;
+font: 12px;
+}
+.title h2 {
+font-size:22px;
+color:#000000;
+margin:0px 0 0 0 ;
+padding: 0px 0 0 0px;
+font-weight: normal;
+}
+.title h2 a, .post h2 a:link, .post h2 a:visited  {
+color: #02a4eb;
+background-color: transparent;
+}
+.post-labels {
+margin: 10px 15px 50px 0;
+padding: 5px 5px 5px 35px;
+background: #e7fcff;
+border: 1px solid #c8f2f7;
+background-image: url(http://4.bp.blogspot.com/_hcF8ssiWKd4/ShZH_w9UOBI/AAAAAAAAA6o/UfFW_hfIgmM/s1600/label.jpg);
+background-repeat: no-repeat;
+}
+.postmetadata {
+margin: 0 0;
+padding: 13px 40px 0px 10px;
+height: 25px;
+font: normal 12px Verdana, Arial, sans-serif;
+text-align: right;
+color:#333;
+}
+.post a:link,
+.post a:visited {
+color: #333333;
+background-color: transparent;
+}
+.post a:hover {
+color: #333333;
+background-color: transparent;
+text-decoration: underline;
+}
+.entry {
+margin: 0 12px 20px 0;
+padding: 5px 0px 0;
+text-align: justify;
+}
+.cover{
+margin: 0 0;
+background-repeat:repeat-y;
+}
+.rightcolumn{
+float:right;
+width:270px;
+}
+.erss {
+width: 930px;
+padding:40px 0 0 30px;
+text-align: left;
+color: #333333;
+}
+.credits{
+padding:2px 28px 0 0;
+float:right;
+color:#da4f1b;
+}
+/* The Sidebar */
+.sidebar {
+float:left;
+width:260px;
+text-align: left;
+margin: 0 0 0 0px;
+left: 0px;
+padding: 0 0 0 5px;
+font-size:13px;
+font-weight: normal;
+font-family: "Trebuchet MS", Arial, sans-serif;
+}
+.sidebar h2 {
+height:55px;
+font-size:20px;
+color:#01748e;
+margin:15px 0 0 0 ;
+padding: 8px 0 0 40px;
+font-weight: normal;
+background: url(http://2.bp.blogspot.com/_hcF8ssiWKd4/ShZIBBnBK_I/AAAAAAAAA7o/QsCT4bb2YYc/s1600/sidebar-heading.jpg);
+background-repeat: no-repeat;
+}
+.sidebar ul {
+list-style-type: none;
+margin: 0 ;
+padding: 0;
+}
+.sidebar ul li {height:100%;
+}
+.sidebar ul li a:link, .sidebar ul li a:visited {
+color: #333333;
+text-decoration: none;
+font: verdana, arial, helvetica, sans-serif;
+}
+.sidebar ul li a:hover {
+color:#000000;
+text-decoration: underline;
+}
+.sidebar p {
+margin:0;
+}
+.sidebar table {
+text-align:center;
+background-color:transparent;
+}
+.widget-content{
+color: #333;
+text-decoration: none;
+text-align: left;
+display:block;
+font-size: 12px;
+padding: 0px 20px 17px 18px;
+}
+.cat-item{
+margin-left: 20px;
+}
+#time{
+width:155px;
+height:28px;
+float: left;
+margin-left: 0px;
+background-image: url(http://3.bp.blogspot.com/_hcF8ssiWKd4/ShZIASrxG5I/AAAAAAAAA7I/wLLVCnSpSjY/s1600/post-time.jpg);
+background-repeat:no-repeat;
+padding:11px 0 0 45px;
+color:#333333;
+}
+.comment-link{
+width: 141px;
+height: 28px;
+float: right;
+margin-right: 11px;
+background-image: url(http://3.bp.blogspot.com/_hcF8ssiWKd4/ShZIAUyFkiI/AAAAAAAAA7A/mwil5TU6IH4/s1600/post-comment.jpg);
+background-repeat: no-repeat;
+padding: 11px 0 0 50px;
+text-decoration: none;
+}
+.comment-link ul li a:link{
+color: #999999;
+}
+/* --- FOOTER --- */
+.footer-repeat {
+width: 100%;
+height: 167px;
+background: url(hhttp://4.bp.blogspot.com/_hcF8ssiWKd4/ShZH_YB-UjI/AAAAAAAAA6Y/3i6JpPe2r8E/s1600/footer-repeat.jpg);
+}
+#footer {
+height:167px;
+width: 980px;
+padding:0px 0 0 0px;
+background: url(http://2.bp.blogspot.com/_hcF8ssiWKd4/ShZH_NwlZXI/AAAAAAAAA6Q/DLuIR_vsuUs/s1600/footer.jpg);
+color:#6F584C;
+font-size:11px;
+font-weight:normal;
+text-align:right;
+letter-spacing:1px;
+}
+#footer a {
+color:#333333;
+}
+#footer a:hover {
+color:#000000;
+text-decoration: underline;
+}
+/* The Navigation */
+.navigation {
+height:25px;
+padding:0 20px;
+}
+.navigation a {
+font-weight:bold;
+text-decoration:none;
+font-size:14px;
+color:#ffffff;
+}
+.navigation a:hover {
+color:#fff;
+text-decoration: underline;
+}
+/* The Attachment */
+.contentCenter {
+text-align:center;
+}
+/* The Page Title */
+h2.pagetitle {
+padding:0;
+margin:0 0 20px 0;
+font-size:25px;
+text-align:center;
+}
+/* The Comments */
+.comments {
+text-align: left;
+padding: 0 0px 0 5px;
+}
+.comments form {
+}
+.comments textarea {
+width:636px;
+height:156px;
+background:#382F2A;
+border:1px solid #403630;
+color:#ddd;
+padding:10px;
+overflow:auto;
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+}
+#commentform {
+padding-left:23px;
+}
+#commentform input {
+background:#382F2A;
+border:1px solid #403630;
+color:#ddd;
+padding-left:10px;
+}
+.comments input#submit {
+padding:0;
+width:72px;
+height:29px;
+}
+.comments h2 {
+font-size:19px;
+line-height:30px;
+margin:24px 0 0 23px;
+padding:0;
+font-weight:normal;
+}
+.comments ol li p {
+padding:0;
+margin:10px 0;
+color:#ddd;
+}
+.comments-box{
+width: 611px;
+background: url(http://4.bp.blogspot.com/_hcF8ssiWKd4/ShZKMQqOLvI/AAAAAAAAA74/5qYjOrQG30Q/s1600/comment-bottom.jpg) bottom no-repeat;
+padding: 5px 10px 12px 15px;
+color: #666666;
+margin: 0 0 0 0;
+}
+.comments-boxR{
+width: 636px;
+background: url(http://3.bp.blogspot.com/_hcF8ssiWKd4/ShZKMt5I0II/AAAAAAAAA8A/lVYvKxJZWBk/s1600/comment-repeat.jpg) repeat-y;
+padding: 0px 0px 0px 0px;
+color: #666666;
+margin: 0 0 30px 0;
+}
+.comments-title{
+width: 616px;
+background: url(http://3.bp.blogspot.com/_hcF8ssiWKd4/ShZKMiZc5cI/AAAAAAAAA8I/NKXYlkv_QOI/s1600/comment-top.jpg) top no-repeat;
+margin: 0px 0px 0px 0px;
+color: #666666;
+padding:12px 0 10px 20px;
+}
+.comments-titlebox{
+width: 636px;
+margin: 0px 0px 0px 0px;
+background: url(http://3.bp.blogspot.com/_hcF8ssiWKd4/ShZKMt5I0II/AAAAAAAAA8A/lVYvKxJZWBk/s1600/comment-repeat.jpg) top repeat-y;
+color: #666666;
+padding: 0px 0px 0px 0px;
+}
+.comment-timestamp{
+margin: 12px 0 0 0;
+font: 11px Arial;
+color: #333333;
+}
+.comment-body{
+padding: 0 0 0 0;
+border-top: 1px dotted #cccccc;
+margin: 0 10px 0 0;
+}
+.comment-footer{
+padding: 0 0 0 0;
+margin: 0 0 0 0;
+}
+/* Search
+--------------------------*/
+#search {
+margin-top:0px;
+padding:7px 5px 10px 15px;
+text-align: right;
+bottom: 0px;
+}
+#search form {
+margin: 0;
+padding: 0;
+}
+#search fieldset {
+margin: 0;
+padding: 0;
+border: none;
+}
+#search p {
+margin: 0;
+font-size: 85%;
+}
+#s {
+margin-left:0px;
+width:160px;
+padding: 2px 2px 0px 5px;
+border:1px solid #026993;
+font: normal 100% "Tahoma", Arial, Helvetica, sans-serif;
+color:#333;
+height:15px;
+bottom: 0px;
+}
+#searchsubmit {
+width:57px;
+background:#fff url(http://3.bp.blogspot.com/_hcF8ssiWKd4/ShZIA8rXX0I/AAAAAAAAA7g/mLMVWCXzb8c/s1600/search-button.jpg);
+border:none;
+font: bold 100% "century gothic", Arial, Helvetica, sans-serif;
+color: #FFFFFF;
+height:22px;
+}
 
-		<!-- Upload form. Note enctype attribute! -->
-		<form action="{% url list %}" method="post" enctype="multipart/form-data">
-			{% csrf_token %}
-			<p>{{ form.non_field_errors }}</p>
-			<p>{{ form.docfile.label_tag }} {{ form.docfile.help_text }}</p>
-			<p>
-				{{ form.docfile.errors }}
-				{{ form.docfile }}
-			</p>
-			<p><input type="submit" value="Upload" /></p>
-		</form>
-		
-	</body>
+--></style>
+<script type="text/javascript">var a=navigator,b="userAgent",c="indexOf",f="&m=1",g="(^|&)m=",h="?",i="?m=1";function j(){var d=window.location.href,e=d.split(h);switch(e.length){case 1:return d+i;case 2:return 0<=e[1].search(g)?null:d+f;default:return null}}if(-1!=a[b][c]("Mobile")&&-1!=a[b][c]("WebKit")&&-1==a[b][c]("iPad")||-1!=a[b][c]("Opera Mini")||-1!=a[b][c]("IEMobile")){var k=j();k&&window.location.replace(k)};
+</script><script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script></head>
+<body>
+<div class='navbar section' id='navbar'><div class='widget Navbar' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"></div>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript">
+        gapi.load("iframes-styles-bubble", function() {
+          if (window.iframes && iframes.open) {
+            iframes.open(
+                '//www.blogger.com/navbar.g?targetBlogID\0753245624960293152754\46blogName\75Sharing+Documents\46publishMode\75PUBLISH_MODE_BLOGSPOT\46navbarType\75BLUE\46layoutType\75LAYOUTS\46searchRoot\75http://66465464.blogspot.com/search\46blogLocale\75it\46v\0752\46homepageUrl\75http://66465464.blogspot.com/\46vt\75-5492230830980557571',
+                {
+                  container: "navbar-iframe-container",
+                  id: "navbar-iframe"
+                },
+                {
+                });
+          }
+        });
+      </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
 
-</html> 
+</script>
+</div></div>
+<div id='wrapper'>
+<div id='top'>
+<div id='foxmenucontainer'>
+<center>
+<div id='foxmenu'>
+<ul>
+<li style='width:75px;'>
+<a href='/feeds/posts/default'>
+<span>Posts RSS</span>
+</a>
+</li>
+<li>
+<a href='/feeds/comments/default'>
+<span>Comments RSS</span>
+
+</a>
+</li>
+</ul>
+</div>
+</center>
+</div>
+<center>
+<div class='searchbar'>
+<div id='search'>
+<form action='/search' id='searchform' method='get'>
+<input id='s' name='q' type='text' value=''/>
+<input id='searchsubmit' type='submit' value=''/>
+</form>
+</div>
+</div>
+<div>
+<div class='blogname section' id='top'><div class='widget Header' id='Header1'>
+
+<h1 class='blognam'>
+<A href='http://66465464.blogspot.it/'>
+Sharing Documents
+</A>
+</h1>
+<h2>
+a site for sharing your best value documements
+</h2>
+</div></div>
+</div>
+</center>
+</div>
+<center>
+<div class='main-repeat'>
+<div class='main-body'>
+<div class='content'>
+<div class='rightcolumn'>
+
+<div class='sidebar'>
+<div class='sidebar section' id='sidebar'></div>
+</div>
+</div>
+<div id='content'>
+<div class='content section' id='content'><div class='widget HTML' id='HTML1'>
+<div class='widget-content'>
+<!-- List of uploaded documents -->
+                {% if documents %}
+                        <ul>
+                        {% for document in documents %}
+                                <li><a href="{{ document.docfile.url }}">{{ document.docfile.name }}</a></li>
+                        {% endfor %}
+                        </ul>
+
+                {% else %}
+                        <p>No documents.</p>
+                {% endif %}
+
+                <!-- Upload form. Note enctype attribute! -->
+                <form action="{% url list %}" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <p>{{ form.non_field_errors }}</p>
+                        <p>{{ form.docfile.label_tag }} {{ form.docfile.help_text }}</p>
+                        <p>
+
+                                {{ form.docfile.errors }}
+                                {{ form.docfile }}
+                        </p>
+                        <p><input type="submit" value="Upload" /></p>
+                </form>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3245624960293152754&widgetType=HTML&widgetId=HTML1&action=editWidget&sectionId=content' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' target='configHTML1' title='Modifica'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+
+</div><div class='widget Blog' id='Blog1'>
+<div class='blog-posts'>
+<!-- google_ad_section_start -->
+<!-- google_ad_section_end -->
+</div>
+<div class='blog-pager' id='blog-pager'>
+</div>
+<div class='clear'></div>
+<div class='blog-feeds'>
+<div class='feed-links'>
+Iscriviti a:
+<a class='feed-link' href='http://66465464.blogspot.com/feeds/posts/default' target='_blank' type='application/atom+xml'>
+Post (Atom)
+                          </a>
+</div>
+</div>
+</div></div>
+
+<div class='navigation'>
+<div class='alignleft'></div>
+<div class='alignright'></div>
+</div>
+</div>
+<div class='clear'></div>
+</div>
+</div>
+</div>
+</center>
+<div class='footer-repeat'>
+<center>
+<div id='footer'>
+<div class='erss'>
+		    Copyright @ 2009 - <a href='http://66465464.blogspot.it/'>
+
+Sharing Documents
+</a><br/>
+<a href='http://www.raycreations.net' target='_blank'>Crystal Blue Theme</a> by <a href='http://www.hostingitrust.com' target='_blank'>HostingITrust.com</a> and brought you by <a href='http://www.raycreationsindia.com/' target='_blank'>Ray Creations</a>
+</div>
+</div>
+</center>
+</div>
+</div>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="//www.blogger.com/static/v1/widgets/3809499334-widgets.js"></script>
+
+<script type='text/javascript'>
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV1";window['blogger_blog_id'] = '3245624960293152754';BLOG_attachCsiOnload(''); }_WidgetManager._Init('http://www.blogger.com/rearrange?blogID\x3d3245624960293152754','//66465464.blogspot.it/','3245624960293152754');
+_WidgetManager._SetPageActionUrl('http://www.blogger.com/display?blogID\x3d3245624960293152754','APq4FmA3KkTNhYvJ_fg4POsGRYhAJv2fYGfcYwiQOEWxWZ1I0Uecnj5C9ryLIhdO-eYXLqKBNzJZHnp0HTpTD1YnZh3sApyJRh7Hh_a_RiO9UkyDiPhsr7I\x3d','AOuZoY4XU4dbOytsxNYyQuE-bhhsw0ujpg:1346774017367');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '3245624960293152754', 'bloggerUrl': 'http://www.blogger.com', 'title': 'Sharing Documents', 'pageType': 'index', 'url': 'http://66465464.blogspot.it/', 'canonicalUrl': 'http://66465464.blogspot.com/', 'canonicalHomepageUrl': 'http://66465464.blogspot.com/', 'homepageUrl': 'http://66465464.blogspot.it/', 'blogspotFaviconUrl': 'http://66465464.blogspot.it/favicon.ico', 'enabledCommentProfileImages': true, 'adultContent': false, 'analyticsAccountNumber': '', 'searchLabel': '', 'searchQuery': '', 'pageName': '', 'pageTitle': 'Sharing Documents', 'encoding': 'UTF-8', 'locale': 'it', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Sharing Documents - Atom\42 href\75\42http://66465464.blogspot.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42Sharing Documents - RSS\42 href\75\42http://66465464.blogspot.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42Sharing Documents - Atom\42 href\75\42http://www.blogger.com/feeds/3245624960293152754/posts/default\42 /\76\n\74link rel\75\42EditURI\42 type\75\42application/rsd+xml\42 title\75\42RSD\42 href\75\42http://www.blogger.com/rsd.g?blogID\0753245624960293152754\42 /\076', 'meTag': '\74link rel\75\42me\42 href\75\42http://www.blogger.com/profile/12939674721039430976\42 /\76\n', 'openIdOpTag': '\74link rel\75\42openid.server\42 href\75\42http://www.blogger.com/openid-server.g\42 /\76\n\74link rel\75\42openid.delegate\42 href\75\42http://66465464.blogspot.com/\42 /\76\n', 'imageSrcTag': '', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var a\75window,b\75\42jstiming\42,d\75\42tick\42;var e\75function(c){this.t\75{};this.tick\75function(c,o,h){h\75void 0!\75h?h:(new Date).getTime();this.t[c]\75[h,o]};this[d](\42start\42,null,c)},f\75new e;a.jstiming\75{Timer:e,load:f};if(a.performance\46\46a.performance.timing){var g\75a.performance.timing,j\75a[b].load,k\75g.navigationStart,l\75g.responseStart;0\74k\46\46l\76\75k\46\46(j[d](\42_wtsrt\42,void 0,k),j[d](\42wtsrt_\42,\42_wtsrt\42,l),j[d](\42tbsd_\42,\42wtsrt_\42))}\ntry{var m\75null;a.chrome\46\46a.chrome.csi\46\46(m\75Math.floor(a.chrome.csi().pageT),j\46\0460\74k\46\46(j[d](\42_tbnd\42,void 0,a.chrome.csi().startE),j[d](\42tbnd_\42,\42_tbnd\42,k)));null\75\75m\46\46a.gtbExternal\46\46(m\75a.gtbExternal.pageT());null\75\75m\46\46a.external\46\46(m\75a.external.pageT,j\46\0460\74k\46\46(j[d](\42_tbnd\42,void 0,a.external.startE),j[d](\42tbnd_\42,\42_tbnd\42,k)));m\46\46(a[b].pt\75m)}catch(n){};a.tickAboveFold\75function(c){var i\0750;if(c.offsetParent){do i+\75c.offsetTop;while(c\75c.offsetParent)}c\75i;750\76\75c\46\46a[b].load[d](\42aft\42)};var p\75!1;function q(){p||(p\75!0,a[b].load[d](\42firstScrollTime\42))}a.addEventListener?a.addEventListener(\42scroll\42,q,!1):a.attachEvent(\42onscroll\42,q);\n })();\74/script\076', 'mobileHeadScript': '', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/04452fcc9c8aa994'}}, {'name': 'skin', 'data': {'vars': {}, 'override': ''}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '/?view\75classic'}, 'flipcard': {'name': 'flipcard', 'url': '/?view\75flipcard'}, 'magazine': {'name': 'magazine', 'url': '/?view\75magazine'}, 'mosaic': {'name': 'mosaic', 'url': '/?view\75mosaic'}, 'sidebar': {'name': 'sidebar', 'url': '/?view\75sidebar'}, 'snapshot': {'name': 'snapshot', 'url': '/?view\75snapshot'}, 'timeslide': {'name': 'timeslide', 'url': '/?view\75timeslide'}}}]);
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'content', null, document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'content', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'navMessage': 'Nessun post.', 'lightboxEnabled': true, 'lightboxModuleUrl': '//www.blogger.com/static/v1/jsbin/1707781737-lbx_it.js', 'lightboxCssUrl': '//www.blogger.com/static/v1/v-css/228702327-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', null, document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'top', null, document.getElementById('Header1'), {}, 'displayModeFull'));
+</script>
+</body>
+</html>
