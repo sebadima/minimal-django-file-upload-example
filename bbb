@@ -1,1 +1,28 @@
 unix
+
+001:
+
+  001:001 login con django
+         potresti prendere la vecchia versione di bookmarks e ridurla a scheletro e
+         aggiungere estetica di nearlyfreespecch
+             fatto***
+  001::002 upload short file
+         usare il programma minimale da github
+              fatto***
+  001::003 list of uploaded files
+         just programming
+              fatto
+  001:004 delete with javascript of uploaded files
+             *** NEXT ***
+  001:005 roll back to previous version of the file
+          study other people solutions....
+  001:006 find a very simple skeleton!
+          maybe nfs php site
+  001:007 integrazione zoho email con saleforce
+  
+
+002:
+  002::001 use git for restore previous releases
+  002:002 find a way to lauch second ec2 when needed
+  002:003 use amazon s3 test
+  002:.004 use jenkins
